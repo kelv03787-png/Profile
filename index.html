@@ -1,2 +1,180 @@
-<h1> Profile</h1>
-<h2> Nama : Made Kelvin Gymnastio</h2>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | About Me</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+            color:white;
+            min-height:100vh;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 10%;
+            background:rgba(255,255,255,.08);
+            backdrop-filter:blur(10px);
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:30px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:#ffd54f;
+        }
+
+        .hero{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:80px 10%;
+            flex-wrap:wrap;
+        }
+
+        .hero-text{
+            max-width:550px;
+        }
+
+        .hero-text h1{
+            font-size:55px;
+            margin-bottom:15px;
+        }
+
+        .hero-text h2{
+            color:#ffd54f;
+            margin-bottom:20px;
+        }
+
+        .hero-text p{
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 35px;
+            background:#ffd54f;
+            color:black;
+            text-decoration:none;
+            border-radius:50px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-5px);
+            background:white;
+        }
+
+        .hero-image img{
+            width:320px;
+            border-radius:50%;
+            border:6px solid white;
+            box-shadow:0 0 40px rgba(255,255,255,.3);
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            margin-top:50px;
+            background:rgba(255,255,255,.08);
+        }
+
+        @media(max-width:900px){
+
+            .hero{
+                flex-direction:column-reverse;
+                text-align:center;
+            }
+
+            .hero-image{
+                margin-bottom:40px;
+            }
+
+            .hero-text h1{
+                font-size:40px;
+            }
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">MyPortfolio</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>Halo, Saya Kelvin</h1>
+
+        <h2>Student | Future Programmer</h2>
+
+        <p>
+            Selamat datang di website pribadi saya.
+            Website ini dibuat sebagai project pembelajaran GitHub Pages.
+            Di sini Anda dapat mengenal saya lebih dekat, melihat pengalaman,
+            hobi, serta proyek yang sedang saya kerjakan.
+        </p>
+
+        <a href="about.html" class="btn">Tentang Saya</a>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="https://i.pravatar.cc/400" alt="Foto Profil">
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Kelvin | Built with HTML & CSS
+</footer>
+
+</body>
+</html>
