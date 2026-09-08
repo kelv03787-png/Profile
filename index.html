@@ -3,178 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Made kelvin gymnastio</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
-            color:white;
-            min-height:100vh;
-        }
-
-        nav{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:20px 10%;
-            background:rgba(255,255,255,.08);
-            backdrop-filter:blur(10px);
-        }
-
-        .logo{
-            font-size:28px;
-            font-weight:bold;
-        }
-
-        nav ul{
-            display:flex;
-            list-style:none;
-            gap:30px;
-        }
-
-        nav a{
-            color:white;
-            text-decoration:none;
-            transition:.3s;
-        }
-
-        nav a:hover{
-            color:#ffd54f;
-        }
-
-        .hero{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:80px 10%;
-            flex-wrap:wrap;
-        }
-
-        .hero-text{
-            max-width:550px;
-        }
-
-        .hero-text h1{
-            font-size:55px;
-            margin-bottom:15px;
-        }
-
-        .hero-text h2{
-            color:#ffd54f;
-            margin-bottom:20px;
-        }
-
-        .hero-text p{
-            line-height:1.8;
-            margin-bottom:30px;
-        }
-
-        .btn{
-            display:inline-block;
-            padding:15px 35px;
-            background:#ffd54f;
-            color:black;
-            text-decoration:none;
-            border-radius:50px;
-            font-weight:bold;
-            transition:.3s;
-        }
-
-        .btn:hover{
-            transform:translateY(-5px);
-            background:white;
-        }
-
-        .hero-image img{
-            width:320px;
-            border-radius:50%;
-            border:6px solid white;
-            box-shadow:0 0 40px rgba(255,255,255,.3);
-        }
-
-        footer{
-            text-align:center;
-            padding:25px;
-            margin-top:50px;
-            background:rgba(255,255,255,.08);
-        }
-
-        @media(max-width:900px){
-
-            .hero{
-                flex-direction:column-reverse;
-                text-align:center;
-            }
-
-            .hero-image{
-                margin-bottom:40px;
-            }
-
-            .hero-text h1{
-                font-size:40px;
-            }
-
-            nav{
-                flex-direction:column;
-                gap:15px;
-            }
-        }
-
-    </style>
+    <title>Made Kelvin | Web Profil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
+    <!-- Navigasi -->
+    <nav>
+        <div class="nav-brand">MK.</div>
+        <div class="nav-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </nav>
 
-    <div class="logo">MyPortfolio</div>
+    <!-- Beranda / Hero Section -->
+    <header id="beranda" class="hero">
+        <div class="hero-content">
+            <div class="image-wrapper">
+                <!-- Ganti gambar ini dengan foto profilmu -->
+                <img src="https://via.placeholder.com/200x200.png?text=Foto+Kelvin" alt="Foto Made Kelvin" class="profile-img">
+            </div>
+            <h1>Made Kelvin</h1>
+            <h2 class="subtitle">Siswa XI SIJA 1</h2>
+            <p>Membangun masa depan melalui Sistem Informatika, Jaringan, dan Aplikasi.</p>
+            <a href="#kontak" class="btn-gold" onclick="sapaPengunjung()">Hubungi Saya</a>
+        </div>
+    </header>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <!-- Tentang Saya -->
+    <section id="tentang" class="section">
+        <h2 class="section-title">Tentang <span>Saya</span></h2>
+        <div class="card">
+            <p>Halo! Saya adalah siswa jurusan SIJA yang memiliki minat besar dalam eksplorasi teknologi, pemrograman, dan jaringan komputer. Saya selalu antusias untuk belajar hal-hal baru dan menerapkan ilmu yang saya dapatkan ke dalam proyek nyata.</p>
+            <br>
+            <p><strong>Hobi:</strong> Ngoding, Menjelajah Teknologi Baru, dan Gaming.</p>
+        </div>
+    </section>
 
-</nav>
+    <!-- Pendidikan -->
+    <section id="pendidikan" class="section">
+        <h2 class="section-title">Riwayat <span>Pendidikan</span></h2>
+        <div class="timeline">
+            <div class="card timeline-item">
+                <h3>SMK Negeri (Jurusan SIJA)</h3>
+                <p>Sedang Berjalan - Fokus pada Sistem Informatika, Jaringan, dan Aplikasi.</p>
+            </div>
+            <div class="card timeline-item">
+                <h3>SMPN 2 Candi</h3>
+                <p>Lulus - Membangun dasar kedisiplinan dan akademis.</p>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
+    <!-- Keahlian -->
+    <section id="keahlian" class="section">
+        <h2 class="section-title">Keahlian <span>& Skill</span></h2>
+        <div class="skills-container">
+            <div class="skill-btn">HTML5 & CSS3</div>
+            <div class="skill-btn">JavaScript Dasar</div>
+            <div class="skill-btn">Git & GitHub</div>
+            <div class="skill-btn">Jaringan / Cisco</div>
+            <div class="skill-btn">Cloud Hosting (Vercel)</div>
+        </div>
+    </section>
 
-    <div class="hero-text">
+    <!-- Pengalaman & Proyek -->
+    <section id="pengalaman" class="section">
+        <h2 class="section-title">Proyek <span>Terbaru</span></h2>
+        <div class="card">
+            <h3>Website Profil Pribadi</h3>
+            <p>Membangun website portofolio interaktif menggunakan HTML, CSS, JavaScript dan melakukan deployment modern menggunakan Vercel serta custom domain Cloudflare.</p>
+            <a href="#" class="btn-outline-gold">Lihat Proyek</a>
+        </div>
+    </section>
 
-        <h1>Halo, Saya Kelvin</h1>
+    <!-- Kontak -->
+    <section id="kontak" class="section">
+        <h2 class="section-title">Mari <span>Terhubung</span></h2>
+        <div class="card text-center">
+            <p>Tertarik untuk berdiskusi atau bekerja sama? Silakan hubungi saya melalui platform di bawah ini.</p>
+            <div class="social-links">
+                <a href="mailto:emailkamu@gmail.com" class="btn-gold">Kirim Email</a>
+                <a href="https://github.com/kelv03787-png" target="_blank" class="btn-outline-gold">GitHub</a>
+            </div>
+        </div>
+    </section>
 
-        <h2>Student | Future Programmer</h2>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Made Kelvin. Didesain dengan penuh dedikasi.</p>
+    </footer>
 
-        <p>
-            Selamat datang di website pribadi saya.
-            Website ini dibuat sebagai project pembelajaran GitHub Pages.
-            Di sini Anda dapat mengenal saya lebih dekat, melihat pengalaman,
-            hobi, serta proyek yang sedang saya kerjakan.
-        </p>
-
-        <a href="about.html" class="btn">Tentang Saya</a>
-
-    </div>
-
-    <div class="hero-image">
-
-        <img src="https://i.pravatar.cc/400" alt="Foto Profil">
-
-    </div>
-
-</section>
-
-<footer>
-    © 2026 Kelvin | Built with HTML & CSS
-</footer>
-
+    <!-- JavaScript Sederhana -->
+    <script>
+        function sapaPengunjung() {
+            alert("Halo! Terima kasih sudah mampir ke profil saya. Mari terhubung!");
+        }
+    </script>
 </body>
 </html>
